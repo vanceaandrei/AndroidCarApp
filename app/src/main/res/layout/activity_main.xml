@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/watch_view_stub"
+    tools:context=".MainActivity"
+    android:layout_height="match_parent"
+     android:layout_width="match_parent"
+    android:background="#000"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:text="@string/btn_forward"
+        android:id="@+id/forward"
+        android:layout_above="@+id/left"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:text="@string/btn_left"
+        android:id="@+id/left"
+        android:layout_alignTop="@+id/right"
+        android:layout_toLeftOf="@+id/backward"
+        android:layout_toStartOf="@+id/backward" />
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:text="@string/btn_right"
+        android:id="@+id/right"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/backward"
+        android:layout_toEndOf="@+id/backward" />
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:text="@string/btn_backward"
+        android:id="@+id/backward"
+        android:layout_below="@+id/left"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
